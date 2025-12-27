@@ -177,35 +177,3 @@ Get conversation history.
   ]
 }
 ```
-
-## Error Handling
-
-The app handles various error scenarios:
-- Empty messages: Returns 400 error
-- Very long messages: Truncated or rejected
-- API failures: Shows friendly error message
-- Database errors: Logged and handled gracefully
-- Network issues: Frontend displays error state
-
-## Assumptions & Decisions
-
-1. **Session Management:** Using localStorage for session persistence (no auth required)
-2. **Message Length:** Limited to 2000 characters
-3. **History Context:** Last 10 messages sent to LLM for context
-4. **Max Tokens:** AI responses limited to 500 tokens for cost control
-5. **Database:** MySQL chosen as specified by user
-
-## Future Improvements
-
-If I had more time, I would add:
-- User authentication
-- Redis caching for frequent queries
-- Markdown rendering in chat
-- File upload support
-- Rate limiting
-- Unit tests
-- Docker setup
-
----
-
-Built by Sparsh Bisen for Spur Take-Home Assignment
