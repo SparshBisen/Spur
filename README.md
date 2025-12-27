@@ -51,38 +51,6 @@ The AI is seeded with knowledge about:
 - ✅ No hardcoded secrets (uses .env)
 - ✅ Clean error messages to users
 
-## Project Structure
-
-```
-assessment/
-├── backend/
-│   ├── src/
-│   │   ├── database/
-│   │   │   ├── connection.ts    # MySQL connection pool
-│   │   │   └── init.ts          # Database initialization
-│   │   ├── data/
-│   │   │   └── storeKnowledge.ts # FAQ/store information
-│   │   ├── routes/
-│   │   │   └── chatRoutes.ts    # API routes
-│   │   ├── services/
-│   │   │   ├── chatService.ts   # Database operations
-│   │   │   └── llmService.ts    # Gemini AI integration
-│   │   └── index.ts             # Express server
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── .env
-├── frontend/
-│   ├── public/
-│   │   └── index.html
-│   ├── src/
-│   │   ├── App.js               # Main chat component
-│   │   ├── App.css              # Chat styles
-│   │   ├── index.js             # React entry point
-│   │   └── index.css            # Global styles
-│   └── package.json
-└── README.md
-```
-
 ## Setup Instructions
 
 ### Prerequisites
